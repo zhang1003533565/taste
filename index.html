@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>垃圾分类指南</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">垃圾分类助手</div>
+            <ul>
+                <li><a href="#search">分类查询</a></li>
+                <li><a href="#guide">分类指南</a></li>
+                <li><a href="#knowledge">知识科普</a></li>
+                <li><a href="#points">积分奖励</a></li>
+                <li><a href="#quiz">互动问答</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 搜索区域 -->
+        <section id="search" class="search-section">
+            <h2>垃圾分类查询</h2>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="输入要查询的物品...">
+                <button onclick="searchItem()">查询</button>
+            </div>
+            <div id="searchResult" class="search-result"></div>
+        </section>
+
+        <!-- 分类指南 -->
+        <section id="guide" class="guide-section">
+            <h2>分类投放指南</h2>
+            <div class="category-container">
+                <div class="category-card">
+                    <img src="images/recyclable.png" alt="可回收物">
+                    <h3>可回收物</h3>
+                    <p>包括废纸、塑料、玻璃、金属和布料等</p>
+                </div>
+                <div class="category-card">
+                    <img src="images/harmful.png" alt="有害垃圾">
+                    <h3>有害垃圾</h3>
+                    <p>包括废电池、废灯管、废药品、废油漆等</p>
+                </div>
+                <div class="category-card">
+                    <img src="images/wet.png" alt="厨余垃圾">
+                    <h3>厨余垃圾</h3>
+                    <p>包括剩菜剩饭、骨头、菜根菜叶等</p>
+                </div>
+                <div class="category-card">
+                    <img src="images/dry.png" alt="其他垃圾">
+                    <h3>其他垃圾</h3>
+                    <p>包括砖瓦陶瓷、渣土、卫生间废纸等</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 知识科普 -->
+        <section id="knowledge" class="knowledge-section">
+            <h2>垃圾分类知识</h2>
+            <div class="knowledge-content">
+                <article class="knowledge-card">
+                    <h3>为什么要进行垃圾分类？</h3>
+                    <p>垃圾分类的意义和重要性说明...</p>
+                </article>
+                <article class="knowledge-card">
+                    <h3>如何正确进行垃圾分类？</h3>
+                    <p>详细的分类方法说明...</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- 积分奖励 -->
+        <section id="points" class="points-section">
+            <h2>积分奖励</h2>
+            <div class="points-container">
+                <div class="points-info">
+                    <h3>当前积分：<span id="currentPoints">0</span></h3>
+                    <button onclick="checkIn()">每日签到</button>
+                </div>
+                <div class="rewards-list">
+                    <h3>可兑换奖励</h3>
+                    <!-- 奖励列表将通过 JavaScript 动态生成 -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 互动问答 -->
+        <section id="quiz" class="quiz-section">
+            <h2>垃圾分类小测试</h2>
+            <div class="quiz-container">
+                <div id="quizQuestion"></div>
+                <div id="quizOptions"></div>
+                <button onclick="nextQuestion()">下一题</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 垃圾分类指南 版权所有</p>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+</html> 

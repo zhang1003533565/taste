@@ -1,0 +1,11 @@
+garbage-sorting/
+├── index.html
+├── css/
+│   └── style.css
+├── js/
+│   └── main.js
+└── images/
+    ├── recyclable.png
+    ├── harmful.png
+    ├── wet.png
+    └── dry.png 
